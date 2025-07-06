@@ -1,0 +1,15 @@
+[build]
+command = "npm run build"
+watch = ["src"]
+
+[site]
+bucket = "dist"
+entry-point = "dist/index.html"
+
+[env.production]
+compatibility_date = "2023-05-01"
+compatibility_flags = []
+
+[env.staging]
+compatibility_date = "2023-05-01"
+compatibility_flags = []
