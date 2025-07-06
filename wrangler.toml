@@ -13,3 +13,10 @@ compatibility_flags = []
 [env.staging]
 compatibility_date = "2023-05-01"
 compatibility_flags = []
+
+[build.upload]
+main = "dist/index.html"
+type = "static"
+
+[build.upload.files]
+"dist/**/*" = "dist/**/*"
