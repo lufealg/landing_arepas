@@ -1,0 +1,12 @@
+:root {
+  --color-background: #fcd116;
+  --color-text: #003893;
+}
+
+.bg-custom {
+  background-color: var(--color-background);
+}
+
+.text-custom {
+  color: var(--color-text);
+}

@@ -1,0 +1,45 @@
+---
+import WhatsAppIcon from './icons/WhatsAppIcon.astro';
+import InstagramIcon from './icons/InstagramIcon.astro';
+import TikTokIcon from './icons/TikTokIcon.astro';
+import FacebookIcon from './icons/FacebookIcon.astro';
+
+
+const links = {
+  whatsapp: {
+    href: 'https://walink.co/291ede',
+    icon: WhatsAppIcon,
+    title: 'WhatsApp'
+  },
+  instagram: {
+    href: 'https://www.instagram.com/las_arepas_del_parcero?igsh=MWhodHF4cDdrb2Uxeg%3D%3D&utm_source=qr',
+    icon: InstagramIcon,
+    title: 'Instagram'
+  },
+  tiktok: {
+    href: 'https://www.tiktok.com/@arepas_del_parcero?_t=ZS-8xmtwpQ1svg&_r=1',
+    icon: TikTokIcon,
+    title: 'Tiktok'
+  },
+  facebook: {
+    href: 'https://www.facebook.com/share/1Xrc556w6r/?mibextid=wwXIfr',
+    icon: FacebookIcon,
+    title: 'Facebook'
+  }
+};
+---
+
+<footer class="bg-custom py-8">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center justify-center">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-custom mb-8">Contactanos</h2>
+      <div class="flex flex-row gap-8 justify-center mb-8">
+        {Object.entries(links).map(([key, { href, icon: Icon }]) => (
+          <a href={href} class="group w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-110">
+            <Icon class="w-8 h-8 text-custom group-hover:text-custom-dark transition-colors duration-300" />
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,59 @@
+---
+import "../styles/tailwind.css";
+import "../styles/colors.css";
+import Footer from '../components/Footer.astro';
+
+const products = [
+  {
+    name: "Arepa maiz blanco paquete 5 unidades",
+    price: 4,
+    image: "public/products/arepatela.webp"
+  },
+  {
+    name: "Chorizos artesanales de cerdo paquete por 7 unidades",
+    price: 10,
+    image: "public/products/chorizos.webp"
+  },
+  {
+    name: "Arepa redonda de maiz blanco paquete por 10 unidades",
+    price: 5,
+    image: "public/products/areparedonda.webp"
+  },
+  {
+    name: "Arepa rellena de queso paquete por 4 unidades",
+    price: 6,
+    image: "public/products/arepaqueso.webp"
+  },
+  {
+    name: "Arepa integral (maiz amarillo, quinoa, ajonjolí, sesamo y chia) paquete por 5 unidades",
+    price: 4,
+    image: "public/products/arepasemillas.webp"
+  },
+  {
+    name: "Moricilla Colombiana una libra",
+    price: 10,
+    image: "public/products/morcilla.webp"
+  }
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body class="flex flex-col bg-custom font-fredoka text-custom">
+		<div class="flex flex-col flex-grow m-8">
+			<slot />
+		</div>
+		<Footer class="mt-auto" />
+	</body>
+</html>
+

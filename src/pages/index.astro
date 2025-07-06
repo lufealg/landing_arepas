@@ -1,0 +1,60 @@
+---
+import Product from '../components/product.astro';
+import Layout from '../layouts/Layout.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<section class="flex flex-col items-start justify-center min-h-screen py-16 px-8">
+		<div class="flex flex-col items-start justify-center">
+			<div class="flex items-center mb-8">
+				<img src="public/imagenes/logoarepas.png" alt="Logo Las arepas del parcero" class="w-48 h-48 mr-8" />
+				<h1 class="text-6xl sm:text-7xl md:text-8xl font-bold text-custom">Las arepas del parcero</h1>
+			</div>
+		</div>
+		<div class="flex flex-row gap-8 items-center justify-center mt-12">
+			<div class="w-1/2">
+				<img src="public/imagenes/hero.webp" alt="Arepa maiz blanco" class="w-full h-auto rounded-lg shadow-lg" />
+			</div>
+			<div class="w-1/2">
+				<p class="text-2xl sm:text-3xl md:text-4xl text-custom leading-relaxed font-semibold">Parce, acá te tenemos las arepas y antojitos más colombianos que vas a encontrar por fuera de la tierrita. Hechos como en casa, con ese saborcito tradicional que tanto extrañás. Porque, donde sea que estés, siempre hay espacio para un pedacito de Colombia. ¡Animate y probá lo nuestro!</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-custom py-12">El auténtico sabor de Colombia, bocado a bocado</h2>
+		<div class="flex flex-row gap-4 items-center justify-center mt-16">
+			<Product image="public/products/arepatela.webp" title="Arepa maiz blanco paquete 5 unidades 4 USD" />
+			<Product image="public/products/chorizos.webp" title="Chorizos artesanales de cerdo paquete por 7 unidades 10 USD" />
+			<Product image="public/products/areparedonda.webp" title="Arepa redonda de maiz blanco paquete por 10 unidades 5 USD" />
+		</div>
+	</section>
+	<section>
+		<h2 class="text-2xl font-bold py-4"></h2>
+		<div class="flex flex-row gap-4 items-center justify-center">
+			<Product image="public/products/arepaqueso.webp" title="Arepa rellena de queso paquete por 4 unidades 6 USD" />
+			<Product image="public/products/arepasemillas.webp" title="Arepa integral (maiz amarillo, quinoa, ajonjolí, sesamo y chia) paquete por 5 unidades 4 USD" />
+			<Product image="public/products/morcilla.webp" title="Moricilla Colombiana una libra por 10 USD" />
+		</div>
+
+	</section>
+	<section>
+		<h2 class="text-2xl font-bold py-4"></h2>
+		<div class="flex flex-col pl-8 items-center justify-center">
+			<div class="w-full max-w-3xl">
+				<div class="flex flex-col items-center justify-center">
+					<div class="flex flex-row gap-16 items-center justify-center">
+						<div class="w-96 h-96">
+							<img src="public/imagenes/contacto.webp" alt="Contacto" class="w-full h-full object-cover rounded-2xl shadow-xl" />
+						</div>
+						<div class="w-96 h-96">
+							<img src="public/imagenes/ubicacion.webp" alt="Ubicación" class="w-full h-full object-cover rounded-2xl shadow-xl" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
